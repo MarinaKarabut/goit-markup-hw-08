@@ -1,0 +1,56 @@
+/*----------Footer-----------*/
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+  & .logo-color {
+    color: #ffffff;
+  }
+}
+
+.container-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.container-footer-adress {
+  text-align: left;
+  width: 231px;
+}
+
+.container-social-link {
+  text-align: left;
+  width: 206px;
+
+  & .icon-button {
+    fill: #ffffff;
+  }
+  & .title {
+    @include font($fs: 14px, $fw: 700);
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+}
+
+.container-social-link .button-icon {
+  background-color: rgba(255, 255, 255, 0.1);
+
+  &:hover {
+    background-color: var(--accent-color);
+  }
+}
+
+.subscribtion {
+  text-align: left;
+  width: 570px;
+
+  & .title {
+    @include font($fs: 14px, $fw: 700);
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,18 @@
+          /*-----------Logo------------*/
+
+          .logo {
+            color: var(--accent-color);
+            font-family: Raleway, sans-serif;
+            @include font(20px, 700, 31px);
+            text-decoration: none;
+            margin-right: 93px;
+            padding-top: 24px;
+            padding-bottom: 25px;
+          }
+          
+          .logo-color {
+            color: var(--title-text-color);
+          }
+
+          
+          

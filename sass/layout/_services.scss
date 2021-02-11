@@ -1,0 +1,49 @@
+/*-----------Services-----------*/
+@media screen and (max-width: 1199px) {
+  .section-services {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-services {
+    padding-top: 47px;
+    padding-bottom: 94px;
+  }
+
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+    padding: 0;
+
+    & > .services-list {
+      flex-basis: calc(100% / 3 - 30px);
+      margin-left: 30px;
+      margin-top: 30px;
+    }
+  }
+
+  .services-list {
+    display: block;
+    position: relative;
+    width: 370px;
+    height: 294px;
+    // z-index: 1;
+  }
+
+  .service {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 100%;
+    padding: 27px 0px;
+    @include font($fs: 14px, $fw: 700);
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    // z-index: 2;
+  }
+}
