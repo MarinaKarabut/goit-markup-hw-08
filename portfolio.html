@@ -16,12 +16,10 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="page-header">
+    <header class="page-header">
       <div class="container page-header-container">
         <nav class="navigation">
-          <a href="./index.html" class="logo"
-            >Web<span class="logo-color">Studio</span></a
-          >
+          <a href="./index.html" class="logo">Web<span class="logo-color">Studio</span></a>
           <ul class="site-nav list">
             <li class="item"><a class="link" href="./index.html">Студия</a></li>
             <li class="item">
@@ -33,19 +31,62 @@
         <ul class="info list">
           <li class="item">
             <a href="mailto:info@devstudio.com" class="link link-mail">
-              <svg class="icon-contact" width="16" height="12">
-                <use href="./img/symbol-defs2.svg#icon-envelope"></use>
-              </svg>info@devstudio.com</a>
+              <svg class="icon-contact1">
+                <use href="./img/symbol-defs2.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
+            >
           </li>
           <li class="item">
             <a href="tel:+380961111111" class="link">
-              <svg class="icon-contact" width="10" height="16">
-                <use href="./img/symbol-defs2.svg#icon-smartphone"></use>
-              </svg>+38 096 111 11 11</a>
+              <svg class="icon-contact2">
+                <use href="./img/symbol-defs2.svg#icon-smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
+
+        <button class="burger-btn" data-menu-open>
+          <svg class="burger-btn-icon">
+            <use href="./img/symbol-defs2.svg#burger-icon"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mobile-menu is-menu-hidden" data-menu>
+        <button type="button" class="mobile-menu-close-btn">
+          <svg class="mobile-menu-close-icon" data-menu-close>
+            <use href="./img/symbol-defs2.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu-navigation-list list">
+          <li class="mobile-menu-navigaiton-item">
+            <a class="mobile-menu-navigation-link" href="./index.html">Студия</a>
+          </li>
+          <li class="mobile-menu-navigaiton-item">
+            <a class="mobile-menu-navigation-link linkcurrent" href="">Портфолио</a>
+          </li>
+          <li class="mobile-menu-navigaiton-item">
+            <a class="mobile-menu-navigation-link" href="">Контакты</a>
+          </li>
+        </ul>
+        <div class="mobile-contacts">
+          <ul class="mobile-menu-contacts list">
+            <li class="mobile-menu-contacts-item">
+              <a href="tel:+380961111111" class="mobile-menu-contacts-link linkcurrent">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-menu-contacts-item">
+              <a href="mailto:info@devstudio.com" class="mobile-menu-contacts-link2">info@devstudio.com</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-social-links-list list">
+            <li class="mobile-social-link"><a href=""></a>Instagram</li>
+            <li class="mobile-social-link"><a class="mob-social-link" href=""></a>Twitter</li>
+            <li class="mobile-social-link"><a class="mob-social-link" href=""></a>Facebook</li>
+            <li class="mobile-social-link"><a class="mob-social-link" href=""></a>LinkedIn</li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main>
       <section class="section-examples">
         <div class="container">
@@ -76,38 +117,63 @@
                 <div class="card-img">
                   <picture>
                     <source
-                      srcset="./img/portfolio/portfolio-desktop/portfolio1-desktop.webp 1x ./img/portfolio/portfolio-desktop/portfolio1-desktop@2x.webp 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-01.webp    1x,
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-01@2x.webp 2x,
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-01@3x.webp 3x
+                      "
                       media="(min-width: 1200px)"
                       type="image/webp"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-desktop/portfolio1-desktop.jpg 1x ./img/portfolio/portfolio-desktop/portfolio1-desktop@2x.jpg 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-01.jpg    1x,
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-01@2x.jpg 2x,
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-01@3x.jpg 3x
+                      "
                       media="(min-width: 1200px)"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-tablet/portfolio-tablet-01.webp 1x ./img/portfolio/portfolio-tablet/portfolio-tablet-01@2x.webp 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-01.webp    1x,
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-01@2x.webp 2x,
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-01@3x.webp 3x
+                      "
                       media="(min-width: 768px)"
                       type="image/webp"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-tablet/portfolio-tablet-01.jpg 1x ./img/portfolio/portfolio-tablet/portfolio-tablet-01@2x.jpg 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-01.jpg    1x,
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-01@2x.jpg 2x,
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-01@3x.jpg 3x
+                      "
                       media="(min-width: 768px)"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-mobile/portfolio-mob-01.webp 1x ./img/portfolio/portfolio-mobile/portfolio-mob-01@2x.webp 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-01.webp    1x,
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-01@2x.webp 2x,
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-01@3x.webp 3x
+                      "
                       media="(min-width: 480px)"
                       type="image/webp"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-mobile/portfolio-mob-01.jpg  1x ./img/portfolio/portfolio-mobile/portfolio-mob-01@2x.jpg  2x"
+                      srcset="
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-01.jpg    1x,
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-01@2x.jpg 2x,
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-01@3x.jpg 3x
+                      "
                       media="(min-width: 480px)"
                     />
-                    <img src="./img/portfolio/portfolio-mobile/portfolio-mob-01.jpg" alt="ноутбук" />
+
+                    <img src="./img/portfolio/portfolio-mobile/portfolio-mobile-01.jpg" alt="ноутбук" />
                   </picture>
 
                   <p class="card-action-text">
@@ -128,38 +194,63 @@
                 <div class="card-img">
                   <picture>
                     <source
-                      srcset="./img/portfolio/portfolio-desktop/portfolio2-desktop.webp 1x ./img/portfolio/portfolio-desktop/portfolio2-desktop@2x.webp 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-02.webp    1x,
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-02@2x.webp 2x,
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-02@3x.webp 3x
+                      "
                       media="(min-width: 1200px)"
                       type="image/webp"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-desktop/portfolio2-desktop.jpg 1x ./img/portfolio/portfolio-desktop/portfolio2-desktop@2x.jpg 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-02.jpg    1x,
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-02@2x.jpg 2x,
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-02@3x.jpg 3x
+                      "
                       media="(min-width: 1200px)"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-tablet/portfolio-tablet-02.webp 1x ./img/portfolio/portfolio-tablet/portfolio-tablet-02@2x.webp 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-02.webp    1x,
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-02@2x.webp 2x,
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-02@3x.webp 3x
+                      "
                       media="(min-width: 768px)"
                       type="image/webp"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-tablet/portfolio-tablet-02.jpg 1x ./img/portfolio/portfolio-tablet/portfolio-tablet-02@2x.jpg 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-02.jpg    1x,
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-02@2x.jpg 2x,
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-02@3x.jpg 3x
+                      "
                       media="(min-width: 768px)"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-mobile/portfolio-mob-02.webp 1x ./img/portfolio/portfolio-mobile/portfolio-mob-02@2x.webp 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-02.webp    1x,
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-02@2x.webp 2x,
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-02@3x.webp 3x
+                      "
                       media="(min-width: 480px)"
                       type="image/webp"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-mobile/portfolio-mob-02.jpg  1x ./img/portfolio/portfolio-mobile/portfolio-mob-02@2x.jpg  2x"
+                      srcset="
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-02.jpg    1x,
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-02@2x.jpg 2x,
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-02@3x.jpg 3x
+                      "
                       media="(min-width: 480px)"
                     />
-                    <img src="./img/portfolio/portfolio-mobile/portfolio-mob-02.jpg " alt="баскетболисты" />
+
+                    <img src="./img/portfolio/portfolio-mobile/portfolio-mobile-02.jpg " alt="баскетболисты" />
                   </picture>
 
                   <p class="card-action-text">
@@ -180,38 +271,63 @@
                 <div class="card-img">
                   <picture>
                     <source
-                      srcset="./img/portfolio/portfolio-desktop/portfolio3-desktop.webp 1x ./img/portfolio/portfolio-desktop/portfolio3-desktop@2x.webp 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-03.webp    1x,
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-03@2x.webp 2x,
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-03@3x.webp 3x
+                      "
                       media="(min-width: 1200px)"
                       type="image/webp"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-desktop/portfolio3-desktop.jpg 1x ./img/portfolio/portfolio-desktop/portfolio3-desktop@2x.jpg 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-03.jpg    1x,
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-03@2x.jpg 2x,
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-03@3x.jpg 3x
+                      "
                       media="(min-width: 1200px)"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-tablet/portfolio-tablet-03.webp 1x ./img/portfolio/portfolio-tablet/portfolio-tablet-03@2x.webp 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-03.webp    1x,
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-03@2x.webp 2x,
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-03@3x.webp 3x
+                      "
                       media="(min-width: 768px)"
                       type="image/webp"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-tablet/portfolio-tablet-03.jpg 1x ./img/portfolio/portfolio-tablet/portfolio-tablet-03@2x.jpg 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-03.jpg    1x,
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-03@2x.jpg 2x,
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-03@3x.jpg 3x
+                      "
                       media="(min-width: 768px)"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-mobile/portfolio-mob-03.webp 1x ./img/portfolio/portfolio-mobile/portfolio-mob-03@2x.webp 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-03.webp    1x,
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-03@2x.webp 2x,
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-03@3x.webp 3x
+                      "
                       media="(min-width: 480px)"
                       type="image/webp"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-mobile/portfolio-mob-03.jpg  1x ./img/portfolio/portfolio-mobile/portfolio-mob-03@2x.jpg  2x"
+                      srcset="
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-03.jpg    1x,
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-03@2x.jpg 2x,
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-03@3x.jpg 3x
+                      "
                       media="(min-width: 480px)"
                     />
-                    <img src="./img/portfolio/portfolio-mobile/portfolio-mob-03.jpg" alt="морепродукты" />
+
+                    <img src="./img/portfolio/portfolio-mobile/portfolio-mobile-03.jpg" alt="морепродукты" />
                   </picture>
 
                   <p class="card-action-text">
@@ -231,38 +347,63 @@
                 <div class="card-img">
                   <picture>
                     <source
-                      srcset="./img/portfolio/portfolio-desktop/portfolio4-desktop.webp 1x ./img/portfolio/portfolio-desktop/portfolio4-desktop@2x.webp 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-04.webp    1x,
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-04@2x.webp 2x,
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-04@3x.webp 3x
+                      "
                       media="(min-width: 1200px)"
                       type="image/webp"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-desktop/portfolio4-desktop.jpg 1x ./img/portfolio/portfolio-desktop/portfolio4-desktop@2x.jpg 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-04.jpg    1x,
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-04@2x.jpg 2x,
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-04@3x.jpg 3x
+                      "
                       media="(min-width: 1200px)"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-tablet/portfolio-tablet-04.webp 1x ./img/portfolio/portfolio-tablet/portfolio-tablet-04@2x.webp 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-04.webp    1x,
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-04@2x.webp 2x,
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-04@3x.webp 3x
+                      "
                       media="(min-width: 768px)"
                       type="image/webp"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-tablet/portfolio-tablet-04.jpg 1x ./img/portfolio/portfolio-tablet/portfolio-tablet-04@2x.jpg 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-04.jpg    1x,
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-04@2x.jpg 2x,
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-04@3x.jpg 3x
+                      "
                       media="(min-width: 768px)"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-mobile/portfolio-mob-04.webp 1x ./img/portfolio/portfolio-mobile/portfolio-mob-04@2x.webp 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-04.webp    1x,
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-04@2x.webp 2x,
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-04@3x.webp 3x
+                      "
                       media="(min-width: 480px)"
                       type="image/webp"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-mobile/portfolio-mob-04.jpg  1x ./img/portfolio/portfolio-mobile/portfolio-mob-04@2x.jpg  2x"
+                      srcset="
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-04.jpg    1x,
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-04@2x.jpg 2x,
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-04@3x.jpg 3x
+                      "
                       media="(min-width: 480px)"
                     />
-                    <img src="./img/portfolio/portfolio-mobile/portfolio-mob-04.jpg" alt="наушники" />
+
+                    <img src="./img/portfolio/portfolio-mobile/portfolio-mobile-04.jpg" alt="наушники" />
                   </picture>
 
                   <p class="card-action-text">
@@ -282,38 +423,63 @@
                 <div class="card-img">
                   <picture>
                     <source
-                      srcset="./img/portfolio/portfolio-desktop/portfolio-05-desktop.webp 1x ./img/portfolio/portfolio-desktop/portfolio-05-desktop@2x.webp 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-05.webp    1x,
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-05@2x.webp 2x,
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-05@3x.webp 3x
+                      "
                       media="(min-width: 1200px)"
                       type="image/webp"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-desktop/portfolio-05-desktop.jpg 1x ./img/portfolio/portfolio-desktop/portfolio-05-desktop@2x.jpg 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-05.jpg    1x,
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-05@2x.jpg 2x,
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-05@3x.jpg 3x
+                      "
                       media="(min-width: 1200px)"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-tablet/portfolio-tablet-5.webp 1x ./img/portfolio/portfolio-tablet/portfolio-tablet-5@2x.webp 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-05.webp    1x,
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-05@2x.webp 2x,
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-05@3x.webp 3x
+                      "
                       media="(min-width: 768px)"
                       type="image/webp"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-tablet/portfolio-tablet-5.jpg 1x ./img/portfolio/portfolio-tablet/portfolio-tablet-5@2x.jpg 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-05.jpg    1x,
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-05@2x.jpg 2x,
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-05@3x.jpg 3x
+                      "
                       media="(min-width: 768px)"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-mobile/portfolio-mob-05(1x).webp 1x ./img/portfolio/portfolio-mobile/portfolio-mob-05(2x)@2x.webp 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-05.webp    1x,
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-05@2x.webp 2x,
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-05@3x.webp 3x
+                      "
                       media="(min-width: 480px)"
                       type="image/webp"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-mobile/portfolio-mob-05(1x).jpg  1x ./img/portfolio/portfolio-mobile/portfolio-mob-05(2x)@2x.jpg  2x"
+                      srcset="
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-05.jpg    1x,
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-05@2x.jpg 2x,
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-05@3x.jpg 3x
+                      "
                       media="(min-width: 480px)"
                     />
-                    <img src="./img/portfolio/portfolio-mobile/portfolio-mob-05(1x).jpg" alt="коробка" />
+
+                    <img src="./img/portfolio/portfolio-mobile/portfolio-mobile-05.jpg" alt="коробка" />
                   </picture>
                   <p class="card-action-text">
                     Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
@@ -332,38 +498,63 @@
                 <div class="card-img">
                   <picture>
                     <source
-                      srcset="./img/portfolio/portfolio-desktop/portfolio-06-desktop.webp 1x ./img/portfolio/portfolio-desktop/portfolio-06-desktop@2x.webp 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-06.webp    1x,
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-06@2x.webp 2x,
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-06@3x.webp 3x
+                      "
                       media="(min-width: 1200px)"
                       type="image/webp"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-desktop/portfolio-06-desktop.jpg 1x ./img/portfolio/portfolio-desktop/portfolio-06-desktop@2x.jpg 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-06.jpg    1x,
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-06@2x.jpg 2x,
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-06@3x.jpg 3x
+                      "
                       media="(min-width: 1200px)"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-tablet/portfolio-tablet-6.webp 1x ./img/portfolio/portfolio-tablet/portfolio-tablet-6@2x.webp 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-06.webp    1x,
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-06@2x.webp 2x,
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-06@3x.webp 3x
+                      "
                       media="(min-width: 768px)"
                       type="image/webp"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-tablet/portfolio-tablet-6.jpg 1x ./img/portfolio/portfolio-tablet/portfolio-tablet-6@2x.jpg 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-06.jpg    1x,
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-06@2x.jpg 2x,
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-06@3x.jpg 3x
+                      "
                       media="(min-width: 768px)"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-mobile/portfolio-mob-06(1x).webp 1x ./img/portfolio/portfolio-mobile/portfolio-mob-06(2x)@2x.webp 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-06.webp    1x,
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-06@2x.webp 2x,
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-06@3x.webp 3x
+                      "
                       media="(min-width: 480px)"
                       type="image/webp"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-mobile/portfolio-mob-06(1x).jpg  1x ./img/portfolio/portfolio-mobile/portfolio-mob-06(2x)@2x.jpg  2x"
+                      srcset="
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-06.jpg    1x,
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-06@2x.jpg 2x,
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-06@3x.jpg 3x
+                      "
                       media="(min-width: 480px)"
                     />
-                    <img src="./img/portfolio/portfolio-mobile/portfolio-mob-06(1x).jpg" alt="монитор" />
+
+                    <img src="./img/portfolio/portfolio-mobile/portfolio-mobile-06.jpg" alt="монитор" />
                   </picture>
 
                   <p class="card-action-text">
@@ -383,38 +574,63 @@
                 <div class="card-img">
                   <picture>
                     <source
-                      srcset="./img/portfolio/portfolio-desktop/portfolio-07-desktop.webp 1x ./img/portfolio/portfolio-desktop/portfolio-07-desktop@2x.webp 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-07.webp    1x,
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-07@2x.webp 2x,
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-07@3x.webp 3x
+                      "
                       media="(min-width: 1200px)"
                       type="image/webp"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-desktop/portfolio-07-desktop.jpg 1x ./img/portfolio/portfolio-desktop/portfolio-07-desktop@2x.jpg 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-07.jpg    1x,
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-07@2x.jpg 2x,
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-07@3x.jpg 3x
+                      "
                       media="(min-width: 1200px)"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-tablet/portfolio-tablet-7.webp 1x ./img/portfolio/portfolio-tablet/portfolio-tablet-7@2x.webp 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-07.webp    1x,
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-07@2x.webp 2x,
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-07@3x.webp 3x
+                      "
                       media="(min-width: 768px)"
                       type="image/webp"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-tablet/portfolio-tablet-7.jpg 1x ./img/portfolio/portfolio-tablet/portfolio-tablet-7@2x.jpg 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-07.jpg    1x,
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-07@2x.jpg 2x,
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-07@3x.jpg 3x
+                      "
                       media="(min-width: 768px)"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-mobile/portfolio-mob-07(1x).webp 1x ./img/portfolio/portfolio-mobile/portfolio-mob-07(2x)@2x.webp 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-07.webp    1x,
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-07@2x.webp 2x,
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-07@3x.webp 3x
+                      "
                       media="(min-width: 480px)"
                       type="image/webp"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-mobile/portfolio-mob-07(1x).jpg  1x ./img/portfolio/portfolio-mobile/portfolio-mob-07(2x)@2x.jpg  2x"
+                      srcset="
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-07.jpg    1x,
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-07@2x.jpg 2x,
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-07@3x.jpg 3x
+                      "
                       media="(min-width: 480px)"
                     />
-                    <img src="./img/portfolio/portfolio-mobile/portfolio-mob-07(1x).jpg" alt="журнал" />
+
+                    <img src="./img/portfolio/portfolio-mobile/portfolio-mobile-07.jpg" alt="журнал" />
                   </picture>
 
                   <p class="card-action-text">
@@ -434,38 +650,63 @@
                 <div class="card-img">
                   <picture>
                     <source
-                      srcset="./img/portfolio/portfolio-desktop/portfolio-08-desktop.webp 1x ./img/portfolio/portfolio-desktop/portfolio-08-desktop@2x.webp 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-08.webp    1x,
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-08@2x.webp 2x,
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-08@3x.webp 3x
+                      "
                       media="(min-width: 1200px)"
                       type="image/webp"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-desktop/portfolio-08-desktop.jpg 1x ./img/portfolio/portfolio-desktop/portfolio-08-desktop@2x.jpg 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-08.jpg    1x,
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-08@2x.jpg 2x,
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-08@3x.jpg 3x
+                      "
                       media="(min-width: 1200px)"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-tablet/portfolio-tablet-8.webp 1x ./img/portfolio/portfolio-tablet/portfolio-tablet-8@2x.webp 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-08.webp    1x,
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-08@2x.webp 2x,
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-08@3x.webp 3x
+                      "
                       media="(min-width: 768px)"
                       type="image/webp"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-tablet/portfolio-tablet-8.jpg 1x ./img/portfolio/portfolio-tablet/portfolio-tablet-8@2x.jpg 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-08.jpg    1x,
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-08@2x.jpg 2x,
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-08@3x.jpg 3x
+                      "
                       media="(min-width: 768px)"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-mobile/portfolio-mob-08(1x).webp 1x ./img/portfolio/portfolio-mobile/portfolio-mob-08(2x)@2x.webp 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-08.webp    1x,
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-08@2x.webp 2x,
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-08@3x.webp 3x
+                      "
                       media="(min-width: 480px)"
                       type="image/webp"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-mobile/portfolio-mob-08(1x).jpg  1x ./img/portfolio/portfolio-mobile/portfolio-mob-08(2x)@2x.jpg  2x"
+                      srcset="
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-08.jpg    1x,
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-08@2x.jpg 2x,
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-08@3x.jpg 3x
+                      "
                       media="(min-width: 480px)"
                     />
-                    <img src="./img/portfolio/portfolio-mobile/portfolio-mob-08(1x).jpg" alt="бирка" />
+
+                    <img src="./img/portfolio/portfolio-mobile/portfolio-mobile-08.jpg" alt="бирка" />
                   </picture>
 
                   <p class="card-action-text">
@@ -485,38 +726,63 @@
                 <div class="card-img">
                   <picture>
                     <source
-                      srcset="./img/portfolio/portfolio-desktop/portfolio-09-desktop.webp 1x ./img/portfolio/portfolio-desktop/portfolio-09-desktop@2x.webp 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-09.webp    1x,
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-09@2x.webp 2x,
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-09@3x.webp 3x
+                      "
                       media="(min-width: 1200px)"
                       type="image/webp"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-desktop/portfolio-09-desktop.jpg 1x ./img/portfolio/portfolio-desktop/portfolio-09-desktop@2x.jpg 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-09.jpg    1x,
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-09@2x.jpg 2x,
+                        ./img/portfolio/portfolio-desktop/portfolio-desktop-09@3x.jpg 3x
+                      "
                       media="(min-width: 1200px)"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-tablet/portfolio-tablet-9.webp 1x ./img/portfolio/portfolio-tablet/portfolio-tablet-9@2x.webp 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-09.webp    1x,
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-09@2x.webp 2x,
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-09@3x.webp 3x
+                      "
                       media="(min-width: 768px)"
                       type="image/webp"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-tablet/portfolio-tablet-9.jpg 1x ./img/portfolio/portfolio-tablet/portfolio-tablet-9@2x.jpg 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-09.jpg    1x,
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-09@2x.jpg 2x,
+                        ./img/portfolio/portfolio-tablet/portfolio-tablet-09@3x.jpg 3x
+                      "
                       media="(min-width: 768px)"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-mobile/portfolio-mob-09(1x).webp 1x ./img/portfolio/portfolio-mobile/portfolio-mob-09(2x)@2x.webp 2x"
+                      srcset="
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-09.webp    1x,
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-09@2x.webp 2x,
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-09@3x.webp 3x
+                      "
                       media="(min-width: 480px)"
                       type="image/webp"
                     />
 
                     <source
-                      srcset="./img/portfolio/portfolio-mobile/portfolio-mob-09(1x).jpg  1x ./img/portfolio/portfolio-mobile/portfolio-mob-09(2x)@2x.jpg  2x"
+                      srcset="
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-09.jpg    1x,
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-09@2x.jpg 2x,
+                        ./img/portfolio/portfolio-mobile/portfolio-mobile-09@3x.jpg 3x
+                      "
                       media="(min-width: 480px)"
                     />
-                    <img src="./img/portfolio/portfolio-mobile/portfolio-mob-09(1x).jpg" alt="ноутбук" />
+
+                    <img src="./img/portfolio/portfolio-mobile/portfolio-mobile-09.jpg" alt="ноутбук" />
                   </picture>
 
                   <p class="card-action-text">
@@ -606,5 +872,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

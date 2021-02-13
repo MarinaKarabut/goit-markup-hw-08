@@ -28,7 +28,8 @@
   align-items: center;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover {
+  &:hover,
+  &:focus {
     border: 1px solid var(--accent-color);
   }
 }
@@ -39,7 +40,8 @@
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .clients-list-link:hover & {
+  .clients-list-link:hover &,
+  .clients-list-link:focus & {
     fill: var(--accent-color);
   }
 }

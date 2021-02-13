@@ -8,7 +8,6 @@
 .list-button {
   display: flex;
   flex-wrap: wrap;
-  // justify-content: center;
   margin-bottom: 34px;
 
   & > .item:not(:last-child) {
@@ -99,6 +98,7 @@
     padding-top: 94px;
     padding-bottom: 94px;
   }
+
   .examples .cards {
     flex-basis: calc(100% / 3 - 30px);
   }

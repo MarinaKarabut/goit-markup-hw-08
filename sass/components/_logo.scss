@@ -5,11 +5,25 @@
   font-family: Raleway, sans-serif;
   @include font(24px, 700, 28px);
   text-decoration: none;
-  margin-right: 15px;
+  margin-left: 15px;
   padding-top: 16px;
   padding-bottom: 16px;
 }
 
 .logo-color {
   color: var(--title-text-color);
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
