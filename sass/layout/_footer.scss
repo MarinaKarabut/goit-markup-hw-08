@@ -7,28 +7,31 @@
   & .logo-color {
     color: #ffffff;
   }
+  & .logo {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    @include font($fs: 24px, $fw: 700, $lh: 28px);
+  }
 }
 
 .container-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  display: block;
+  text-align: center;
 }
 
 .container-footer-adress {
-  text-align: left;
-  width: 231px;
+  margin-bottom: 60px;
 }
 
 .container-social-link {
-  text-align: left;
-  width: 206px;
+  margin-bottom: 60px;
 
   & .icon-button {
     fill: #ffffff;
   }
   & .title {
-    @include font($fs: 14px, $fw: 700);
+    @include font($fs: 14px, $fw: 700, $lh: 16px);
     color: #ffffff;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -37,20 +40,102 @@
 
 .container-social-link .button-icon {
   background-color: rgba(255, 255, 255, 0.1);
-
   &:hover {
     background-color: var(--accent-color);
   }
 }
 
 .subscribtion {
-  text-align: left;
-  width: 570px;
+  // max-width: 450px;
 
   & .title {
-    @include font($fs: 14px, $fw: 700);
+    @include font($fs: 14px, $fw: 700, $lh: 16px);
     color: #ffffff;
     text-transform: uppercase;
     margin-bottom: 20px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    align-items: baseline;
+  }
+
+  .container-footer-adress {
+    width: 50%;
+  }
+  .container-social-link {
+    width: 50%;
+  }
+
+  .subscribtion {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-footer {
+    text-align: left;
+  }
+  .container-footer-adress {
+    width: calc((50% - 45px) / 2);
+  }
+
+  .container-social-link {
+    width: calc((50% - 45px) / 2);
+  }
+
+  .subscribtion {
+    width: calc(50% - 15px);
+  }
+}
+
+// .container-footer {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: baseline;
+// }
+
+// .container-footer-adress {
+//   text-align: left;
+//   width: 231px;
+// }
+
+// .container-social-link {
+//   text-align: left;
+//   width: 206px;
+
+//   & .icon-button {
+//     fill: #ffffff;
+//   }
+//   & .title {
+//     @include font($fs: 14px, $fw: 700);
+//     color: #ffffff;
+//     text-transform: uppercase;
+//     margin-bottom: 20px;
+//   }
+// }
+
+// .container-social-link .button-icon {
+//   background-color: rgba(255, 255, 255, 0.1);
+
+//   &:hover {
+//     background-color: var(--accent-color);
+//   }
+// }
+
+// .subscribtion {
+//   text-align: left;
+//   width: 570px;
+
+//   & .title {
+//     @include font($fs: 14px, $fw: 700);
+//     color: #ffffff;
+//     text-transform: uppercase;
+//     margin-bottom: 20px;
+//   }
+// }

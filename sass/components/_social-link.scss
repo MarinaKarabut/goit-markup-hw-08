@@ -35,3 +35,13 @@
     fill: #ffffff;
   }
 }
+@media screen and (min-width: 768px) {
+  .social-link {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .social-link {
+    justify-content: left;
+  }
+}
