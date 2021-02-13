@@ -255,7 +255,7 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .social-link {
+  .container-social-link .social-link {
     justify-content: left;
   }
 }
