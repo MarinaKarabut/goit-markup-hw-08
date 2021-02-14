@@ -150,10 +150,9 @@
   letter-spacing: 0.02em;
   color: var(--accent-color);
   margin-bottom: 48px;
-}
-
-.mobile-social-link:not(:last-child) {
-  margin-right: 10px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .mob-social-link::after {
